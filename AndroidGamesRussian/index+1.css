@@ -1,0 +1,201 @@
+ * {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header1 {
+ display: flex;
+ flex-wrap: wrap;
+
+ font-size: 1em;
+ color: white;
+ background-color: green;
+ border: 1px solid springgreen;
+ padding: 2px;
+}
+.header2 {
+ display: flex;
+ flex-wrap: wrap;
+
+  font-size:3em;
+  color: white;
+
+ background-color: black;
+ border: 1px solid springgreen;
+ padding: 10px;
+}
+
+ .footer {
+ display: flex;
+ flex-wrap: wrap;
+justify-content: center;
+ background-color: black;
+ border: 2px solid springgreen;
+ padding: 10px;
+ color: white;
+ text-align: center;
+ font-size: 1em;
+ position: fixed;
+ bottom: 0;
+ width: 97%;
+ }
+ /* Six buttons with code link to some pages in this project */
+ .button-group {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+ }
+ .button {
+ display: inline-block;
+ padding: 10px;
+ margin: 10px;
+ background-color: GREEN;
+ color: white;
+ border: 1px solid black;
+ border-radius: 5px;
+ font-size: 1.5em;
+ text-align: center;
+ text-decoration: none;
+ }
+
+ /* Fixed background */
+ body {
+
+   background-color: #FFFFFF;
+   background-color:black;
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: repeat;
+   background-size: 100% 100%;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+
+
+ }
+
+
+
+
+        /* Style for the game container */
+        #game-container {
+            position: relative;
+            width: 360px;
+            height: 400px;
+            background-image:url('SPACE38.JPG');
+
+            border: 1px solid SKYBLUE;
+
+
+        }
+        /* Style for the character */
+        #character {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            background-image:url('AIR3.PNG');
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        /* Style for the bullets */
+        .bullet {
+            position: absolute;
+            width: 10px;
+            height: 5px;
+            background-color: springgreen;
+        }
+        /* Style for the enemies */
+        .enemy {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+           background-image:url('enemy123.PNG');
+           transform: translateX(-100%);
+        }
+
+
+
+         .buttone-group {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ }
+ .buttone {
+ display: inline-block;
+       width: 50px;
+            height: 50px;
+            background-color: springgreen;
+             border: 2px solid red;
+             border-radius: 30%;
+             padding: 6px;
+             margin: 6px;
+
+            text-align: center;
+            color: red;
+            line-height: 6px;
+            cursor: pointer;
+        }
+ }
+
+
+
+
+
+         /* Flexible layout responsive design */
+
+ .header1 {
+ font-size: 0.5em;
+ padding: 2px;
+ }
+ /* Big red header with red border */
+ .header2 {
+ font-size: 4em;
+ padding: 2px;
+ }
+ /* Six buttons with code link to some pages in this project */
+ .button-group {
+ margin-top: 10px;
+ }
+ .button {
+ padding: 5px;
+ margin: 5px;
+ font-size: 1em;
+ }
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  flex: 100%;
+
+  padding: 5px;
+}
+.column img {
+
+  width: 100%;
+  height: auto;
+
+      }
+@media screen and (max-width: 320px) {
+  .column {
+
+    width: 100%;
+  }
+
+
+}
